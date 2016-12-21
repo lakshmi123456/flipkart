@@ -1,0 +1,13 @@
+<project name = "flipkart" >
+<target name="compile">
+<mkdir dir = "classes"/>
+<javac srcdir ="src" destdir = "classes"/>
+</target>
+
+<!-- this is used to package or jar of classes 
+     -->
+<target name = "package">
+<mkdir dir = "lib"/>
+<jar basedir = "classes" destfile ="lib/flipkart.jar"/>
+</target>     
+</project>
